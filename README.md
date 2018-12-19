@@ -1,8 +1,8 @@
-# parity-docker
+# Kryha's Parity:Stable Image
 
-This is an update to the `parity/parity:stable` that allows it to run in docker-compose and Kubernetes environments because the binary is executed as root within the container.
+This is an update to the `parity/parity:stable` image that allows it to run without modifications in docker-compose and Kubernetes environments because the binary is executed as root within the container.
 
-The `--base-path` has been updated to point to `/root/parity` and command line argumensts are supported. This allows for easy volume mounting on the host.
+The `--base-path` has been updated to point to `/root/parity` and command line argumensts are supported. This allows easy volume mounting on the host.
 
 Our Docker Hub repository is linked to the `parity/parity:stable` one. As a result, our image gets autobuilt once `parity:stable` is updated.
 
