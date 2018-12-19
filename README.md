@@ -6,6 +6,8 @@ The `--base-path` has been updated to point to `/root/parity` and command line a
 
 Our Docker Hub repository is linked to the `parity/parity:stable` one. As a result, our image gets autobuilt once `parity:stable` is updated.
 
+![Docker Hub Repository Link proof](Repo-link-proof.png)
+
 Docker Hub repository: https://hub.docker.com/r/kryha/parity
 
 Docker-compose example:
