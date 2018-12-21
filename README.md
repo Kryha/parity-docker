@@ -17,7 +17,7 @@ Docker-compose example:
   parity:
     image: kryha/parity:latest
     volumes:
-      - ./parity/:/root/parity/
+      - .parity/:/root/parity/
     command:
       - --chain=tobalaba
       - --jsonrpc-apis=all
@@ -28,3 +28,5 @@ Docker-compose example:
       - --ws-origins=all
       - --ws-hosts=all
 ```
+
+Example live deployment: https://ewf.kryha.io
