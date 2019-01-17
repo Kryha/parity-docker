@@ -1,9 +1,9 @@
-FROM parity/parity:stable
+FROM parity/parity:nightly
 
 LABEL maintainer="dan@kryha.io"
 
 USER root
 WORKDIR /root/parity
-ENTRYPOINT ["/home/parity/bin/parity", "--base-path", "/root/parity"] 
+ENTRYPOINT ["/bin/parity", "--base-path", "/root/parity"] 
 
 VOLUME [ "/root/parity" ]
