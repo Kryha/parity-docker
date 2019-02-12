@@ -1,4 +1,4 @@
-# Kryha's Parity:Nightly Image
+# Kryha's Parity Docker Images
 
 The current version of `parity/parity:nightly` executes the parity binary as the `parity` user, creating issues such as `Error upgrading parity data: CannotCreateConfigPath` when mounting in ContainerOS.
 
