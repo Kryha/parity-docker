@@ -8,8 +8,7 @@ LABEL maintainer="dan@kryha.io"
 
 RUN apt-get update -qq && apt-get install build-essential cmake git libudev-dev -qqy && \
     git clone https://github.com/paritytech/parity && \
-    cd parity && \
-    git checkout nightly && \
+    cd parity
     cargo build --release
 
 FROM ubuntu:latest
