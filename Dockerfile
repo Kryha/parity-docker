@@ -1,4 +1,4 @@
-FROM parity/parity:nightly as notifier
+FROM parity/parity:stable as notifier
 
 FROM rust:slim as builder
 
@@ -9,7 +9,7 @@ LABEL maintainer="dan@kryha.io"
 RUN apt-get update -qq && apt-get install build-essential cmake git libudev-dev -qqy && \
     git clone https://github.com/paritytech/parity && \
     cd parity && \
-    git checkout nightly && \
+    git checkout stable && \
     cargo build
 
 FROM ubuntu:latest
