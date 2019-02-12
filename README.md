@@ -16,7 +16,9 @@ It uses exactly the same tags as parity/parity, but we also added a new tag `kry
 
 All images are multi-stage docker builds and the final ones are slim based on `ubuntu:latest` (which is LTS).
 
-This is an update that also allows it to run without modifications in docker-compose on ContainerOS and Kubernetes environments because the binary is executed as root within the container.
+This is an update that also allows it to run without modifications in docker-compose on ContainerOS and Kubernetes environments because the binary is executed as root within the container. 
+
+Please make sure that you are using the correct paths.
 
 Docker Hub repository: https://hub.docker.com/r/kryha/parity
 
